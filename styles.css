@@ -1,0 +1,56 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --nav-bg: #333333;
+    --nav-text: #ffffff;
+    --card: #f4f4f4;
+}
+
+body.dark {
+    --bg: #121212;
+    --text: #ffffff;
+    --nav-bg: #1e1e1e;
+    --nav-text: #ffffff;
+    --card: #2a2a2a;
+}
+
+/* Global styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease;
+}
+
+/*  Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 20px;
+    background: var(--nav-bg);
+    color: var(--nav-text);
+    transition: background 0.3s ease;
+}
+
+.nav-left a {
+    color: var(--nav-text);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.nav-left a:hover {
+    opacity: 0.7;
+}
+
+/* Toggle Switch styling */
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
